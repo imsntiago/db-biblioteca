@@ -47,3 +47,43 @@ VALUES
 ('2026-04-03', '2026-04-12', 'María Gómez', 2),
 ('2026-04-05', '2026-04-13', 'Carlos Ruiz', 3);
 
+INSERT INTO prestamos(fecha_prestamo, fecha_devolucion, nombre_usuario, libro_id)
+VALUES
+('2026-04-08', '2026-04-15', 'Ana Torres', 1),
+('2026-04-09', NULL, 'Luis Martínez', 2),
+('2026-04-10', NULL, 'Sofía Herrera', 3);
+
+SELECT * FROM libros;
+
+SELECT * 
+FROM prestamos 
+WHERE fecha_devolucion IS NULL;
+
+UPDATE prestamos
+SET nombre_usuario = 'Santiago Jaramillo'
+WHERE prestamos_id = 5;
+
+SELECT * FROM prestamos;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
