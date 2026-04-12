@@ -72,54 +72,67 @@ Fernández" desde el 15 de julio de 2024 hasta el 29 de julio de 2024.
 ## Parte 1 - Creación Base de Datos y Tablas:
 
 1. Creación de la base de datos biblioteca:
+
 ![Base de Datos](assets/create-db.png)
 
 2. Creación tabla autores:
+
 ![Tabla Autores](assets/table-autores.png)
 
 3. Creación tabla libros:
+
 ![Tabla Libros](assets/table-libros.png)
 
 4. Creación tabla prestamos:
+
 ![Tabla Prestamos](assets/table-prestamos.png)
 
 ## Parte 2 - Inserción de Datos:
 
 1. Insertar datos en las tablas:
+
 ![Insercion de Datos](assets/insert-values.png)
 
 ## Parte 3 - Consultas y Manipulación de Datos
 
 1. Listado de libros:
+
 ![Libros](assets/first-query.png)
 
 2. Prestamos no devueltos:
+
 ![Prestamos](assets/second-query.png)
 
 3. Actualizar nombre de un usuario:
 ![Nombre Usuario](assets/third-query.png)
 
 4. Eliminación de un libro:
+
 ![Eliminar Libro](assets/fourth-query.png)
 
 
 ## Parte 4 - Modificación de la Estructura de las Tablas
 
 5. Añadir columna Editorial a la tabla Libros:
+
 ![Nueva Columna](assets/fift-query.png)
 
 6. Cambiar el nombre de la tabla Autores:
+
 ![Nuevo Nombre](assets/sixth-query.png)
 
 Al cambiar el nombre de la tabla se requiere configurar la relación que hay con la tabla libros:
+
 ![Configurar Relación](assets/change-relation.png)
 
 ## Parte 5 - Otros
 
 1. Agregar un nuevo escritor:
+
 ![Nuevo Escritor](assets/seventh-query.png)
 
 2. Agregar un nuevo libro:
+
 ![Nuevo Libro](assets/eigth-query.png)
 
 
