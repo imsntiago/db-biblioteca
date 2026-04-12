@@ -65,7 +65,13 @@ WHERE prestamos_id = 5;
 
 SELECT * FROM prestamos;
 
+SELECT * FROM libros;
 
+DELETE FROM prestamos
+WHERE libro_id = 1;
+
+DELETE FROM libros
+WHERE libro_id = 1;
 
 
 
