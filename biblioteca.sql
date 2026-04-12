@@ -99,6 +99,22 @@ ADD CONSTRAINT fk_escritor
 FOREIGN KEY (escritor_id)
 REFERENCES escritores(escritor_id);
 
+INSERT INTO escritores (nombre, apellido, nacionalidad)
+VALUES
+('Julio', 'Cortázar', 'Argentina');
+
+SELECT * FROM escritores;
+
+INSERT INTO libros (titulo, genero, ano_publicacion, escritor_id)
+VALUES
+('Rayuela', 'Novela', 1963, 4);
+
+SELECT * FROM prestamos;
+SELECT * FROM libros;
+
+INSERT INTO prestamos (fecha_prestamo, fecha_devolucion, nombre_usuario, libro_id)
+VALUES
+('2024-07-15', '2024-07-29', 'Lucía Fernandez', 4);
 
 
 
