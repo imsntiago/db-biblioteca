@@ -73,10 +73,31 @@ WHERE libro_id = 1;
 DELETE FROM libros
 WHERE libro_id = 1;
 
+ALTER TABLE libros
+ADD editorial VARCHAR(100);
 
+SELECT * FROM libros;
 
+RENAME TABLE autores TO escritores;
 
+SELECT * FROM escritores;
 
+-- AL CAMBIAR EL NOMBRE DE LA TABLA autores a escritores, SE DEBE CONFIGURAR LA RELACIÓN QUE HAY ENTRE LA TABLA libros Y autores.
+SHOW CREATE TABLE libros;
+
+ALTER TABLE libros
+DROP FOREIGN KEY libros_ibfk_1;
+
+ALTER TABLE escritores
+CHANGE autor_id escritor_id INT AUTO_INCREMENT;
+
+ALTER TABLE libros
+CHANGE autor_id escritor_id INT;
+
+ALTER TABLE libros
+ADD CONSTRAINT fk_escritor
+FOREIGN KEY (escritor_id)
+REFERENCES escritores(escritor_id);
 
 
 
